@@ -1,0 +1,16 @@
+<stack>
+  <description brief="Care-O-bot stack with mobile manipulation packages">
+
+     The cob_mobile_manipulation stack includes packages that provide mobile manipulation capabilities for Care-O-bot.
+
+  </description>
+  <author>Maintained by Felix Messmer</author>
+  <license>BSD,LGPL</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cob_mobile_manipulation</url>
+  <depend stack="ros" />
+  <depend stack="ros_comm" /> <!-- std_msgs, rospy, roscpp -->
+  <depend stack="common" /> <!-- actionlib, tinyxml -->
+  <depend stack="common_msgs" /> <!-- nav_msgs, actionlib_msgs, trajectory_msgs, sensor_msgs, geometry_msgs, visualization_msgs -->
+  
+</stack>
