@@ -10,8 +10,9 @@
         <param name="default_control_mode" value="arm_base" />
         <param name="base_to_arm_ratio" value="0.5" />
     </node>
+    
     <!--<node pkg="spacenav_node" type="spacenav_node" name="spacenav_node" cwd="node" respawn="false" output="screen"/>-->
-    <node pkg="cob_mmcontroller" type="cob_cartesian_trajectories_PID" name="cob_cartesian_trajectories_PID" cwd="node" respawn="false" output="screen">
+    <node pkg="cob_articulation_controller" type="cob_cartesian_trajectories_PID" name="cob_cartesian_trajectories_PID" cwd="node" respawn="false" output="screen">
         <param name="p_gain" value="1.0" />
         <param name="i_gain" value="0.0002" /> <!--"0.0002" /-->
         <param name="d_gain" value="0.001" />    
@@ -19,7 +20,6 @@
 
     <node pkg="cob_mmcontroller" type="cob_spnav_filter" name="cob_spnav_filter" cwd="node" respawn="false" output="screen"/>
 
-<!--    <node pkg="cob_mmcontroller" type="cob_manipulability" name="arm_manipulability_node" ns="arm_controller" cwd="node" respawn="false" output="screen"/>
--->
+    <!--node pkg="cob_mmcontroller" type="manipulability_publisher" name="arm_manipulability_node" ns="arm_controller" cwd="node" respawn="false" output="screen"/-->
 
 </launch>
